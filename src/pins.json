@@ -1,0 +1,11 @@
+[
+  {"id":"disco-ball","name":"Disco ball","category":["Music","Lifestyle"],"asset":"/assets/pins/disco-ball.png","description":"A little reminder that every ordinary evening can become a celebration.","x":35,"y":27,"size":19,"depth":"far","rotate":-8},
+  {"id":"dumbbell","name":"Dumbbell","category":["Sport","Body"],"asset":"/assets/pins/dumbbell.png","description":"Strength, momentum and the quiet confidence that comes from showing up.","x":68,"y":24,"size":18,"depth":"mid","rotate":8},
+  {"id":"cat","name":"Cat","category":["Personal"],"asset":"/assets/pins/cat.png","description":"Soft paws, strong opinions and the warmest place in my universe.","x":50,"y":48,"size":23,"depth":"near","rotate":1},
+  {"id":"macbook","name":"MacBook","category":["Work"],"asset":"/assets/pins/macbook.png","description":"Where ideas become plans, drafts become stories and curiosity becomes craft.","x":24,"y":51,"size":24,"depth":"mid","rotate":-8},
+  {"id":"microphone","name":"Microphone","category":["Music","Performance"],"asset":"/assets/pins/microphone.png","description":"A voice, a stage and that electric second before the first note begins.","x":78,"y":49,"size":18,"depth":"near","rotate":-15},
+  {"id":"passion-fruit","name":"Passion fruit","category":["Food","Lifestyle"],"asset":"/assets/pins/passion-fruit.png","description":"Bright, unexpected and a little bit tropical — joy with a sharp edge.","x":32,"y":73,"size":23,"depth":"near","rotate":8},
+  {"id":"tarot-the-sun","name":"Tarot — The Sun","category":["Symbolic"],"asset":"/assets/pins/tarot-the-sun.png","description":"Clarity, warmth and the courage to step fully into the light.","x":51,"y":74,"size":20,"depth":"near","rotate":-5},
+  {"id":"prosecco","name":"Prosecco","category":["Lifestyle"],"asset":"/assets/pins/prosecco.png","description":"For milestones, tiny victories and Tuesdays that deserve a little sparkle.","x":67,"y":67,"size":20,"depth":"mid","rotate":12},
+  {"id":"music-note","name":"Music note","category":["Music"],"asset":"/assets/pins/music-note.png","description":"The soundtrack that turns memories into places I can visit again.","x":75,"y":80,"size":17,"depth":"near","rotate":10}
+]

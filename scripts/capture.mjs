@@ -1,0 +1,24 @@
+import { chromium } from 'playwright-core';
+
+const browser = await chromium.launch({ executablePath:'/usr/bin/chromium', headless:true, args:['--no-sandbox','--disable-dev-shm-usage','--disable-gpu'], timeout:15000 });
+const page = await browser.newPage({ viewport:{width:1672,height:941}, deviceScaleFactor:1 });
+const consoleErrors=[];
+page.on('console',message=>{if(message.type()==='error')consoleErrors.push(message.text())});
+await page.goto('http://127.0.0.1:4173/',{waitUntil:'networkidle',timeout:15000});
+await page.screenshot({path:'/tmp/mlu-desktop.png'});
+const pinCount=await page.locator('.pin').count();
+await page.locator('.pin').first().click({force:true});
+const dialogVisible=await page.locator('[role="dialog"]').isVisible();
+await page.screenshot({path:'/tmp/mlu-dialog.png'});
+await page.keyboard.press('Escape');
+const dialogClosed=await page.locator('[role="dialog"]').count()===0;
+await page.evaluate(()=>window.scrollTo(0,document.querySelector('#collection').offsetTop));
+await page.screenshot({path:'/tmp/mlu-collection.png'});
+await page.locator('.collection-card').first().click();
+const collectionDialogVisible=await page.locator('[role="dialog"]').isVisible();
+await page.keyboard.press('Escape');
+await page.setViewportSize({width:390,height:844});
+await page.reload({waitUntil:'networkidle'});
+await page.screenshot({path:'/tmp/mlu-mobile.png'});
+console.log(JSON.stringify({pinCount,dialogVisible,dialogClosed,collectionDialogVisible,consoleErrors}));
+await browser.close();
