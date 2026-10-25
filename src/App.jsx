@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowRight, Sparkle, X } from '@phosphor-icons/react';
+import { Sparkle, X } from '@phosphor-icons/react';
 import pins from './pins.json';
 
 const assetUrl = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
@@ -38,20 +38,10 @@ function PinDialog({ pin, onClose }) {
 
 export default function App() {
   const [selectedPin, setSelectedPin] = useState(null);
-  const goToCollection = () => document.getElementById('collection')?.scrollIntoView({behavior:'smooth'});
   return (
     <div className="site-shell" style={{'--site-background': `url("${assetUrl('/assets/background.png')}")`}}>
       <section className="hero" id="top">
-        <header className="site-header">
-          <a className="brand-mark" href="#top" aria-label="Home"><Sparkle size={34} weight="fill" /></a>
-          <nav aria-label="Primary navigation"><button onClick={goToCollection}>Collection</button><span className="collection-count">9</span><a href="#about">About</a></nav>
-        </header>
         <div className="hero__layout">
-          <div className="hero__copy">
-            <div className="title-row"><h1>My Little<br/><em>Universe</em></h1><Sparkle className="title-sparkle" size={42} weight="fill" /></div>
-            <p className="hero__tagline">A collection of<br/>things that<br/>make me, me.</p>
-            <button className="primary-cta" onClick={goToCollection}><span>Explore my collection</span><ArrowRight size={24}/></button>
-          </div>
           <div className="universe" aria-label="Interactive collection inside a glass sphere">
             <div className="orb">
               <img className="orb__glass orb__glass--back" src={assetUrl('/assets/orb-glass.png')} alt=""/>
