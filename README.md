@@ -18,4 +18,6 @@ npm run build
 node scripts/capture.mjs
 ```
 
-`src/pins.json` is the single source for pin content and placement. Generated artwork lives in `public/assets/`.
+`src/data/pins.json` is the single source for approved pin content, placement and depth. Generated artwork lives in `public/assets/`.
+
+Click a pin to bring it forward. Click the illuminated central button on the base to open the visual Collection.

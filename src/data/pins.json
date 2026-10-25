@@ -1,0 +1,92 @@
+[
+  {
+    "id": "microphone",
+    "name": "Microphone",
+    "categories": ["Music", "Performance"],
+    "status": "approved",
+    "asset": "/assets/pins/microphone.png",
+    "initialPosition": { "x": 0.78, "y": 0.49, "z": 0.76 },
+    "rotation": { "x": 0, "y": 0, "z": -15 },
+    "size": 0.18
+  },
+  {
+    "id": "passion-fruit",
+    "name": "Passion fruit",
+    "categories": ["Food", "Lifestyle"],
+    "status": "approved",
+    "asset": "/assets/pins/passion-fruit.png",
+    "initialPosition": { "x": 0.32, "y": 0.73, "z": 0.82 },
+    "rotation": { "x": 0, "y": 0, "z": 8 },
+    "size": 0.23
+  },
+  {
+    "id": "tarot-the-sun",
+    "name": "Tarot — The Sun",
+    "categories": ["Symbolic"],
+    "status": "approved",
+    "asset": "/assets/pins/tarot-the-sun.png",
+    "initialPosition": { "x": 0.51, "y": 0.74, "z": 0.72 },
+    "rotation": { "x": 0, "y": 0, "z": -5 },
+    "size": 0.2
+  },
+  {
+    "id": "macbook",
+    "name": "MacBook",
+    "categories": ["Work"],
+    "status": "approved",
+    "asset": "/assets/pins/macbook.png",
+    "initialPosition": { "x": 0.24, "y": 0.51, "z": 0.46 },
+    "rotation": { "x": 0, "y": 0, "z": -8 },
+    "size": 0.24
+  },
+  {
+    "id": "cat",
+    "name": "Cat",
+    "categories": ["Personal"],
+    "status": "approved",
+    "asset": "/assets/pins/cat.png",
+    "initialPosition": { "x": 0.5, "y": 0.48, "z": 0.88 },
+    "rotation": { "x": 0, "y": 0, "z": 1 },
+    "size": 0.23
+  },
+  {
+    "id": "disco-ball",
+    "name": "Disco ball",
+    "categories": ["Music", "Lifestyle"],
+    "status": "approved",
+    "asset": "/assets/pins/disco-ball.png",
+    "initialPosition": { "x": 0.35, "y": 0.27, "z": 0.22 },
+    "rotation": { "x": 0, "y": 0, "z": -8 },
+    "size": 0.19
+  },
+  {
+    "id": "music-note",
+    "name": "Music note",
+    "categories": ["Music"],
+    "status": "approved",
+    "asset": "/assets/pins/music-note.png",
+    "initialPosition": { "x": 0.75, "y": 0.8, "z": 0.84 },
+    "rotation": { "x": 0, "y": 0, "z": 10 },
+    "size": 0.17
+  },
+  {
+    "id": "prosecco",
+    "name": "Prosecco",
+    "categories": ["Lifestyle"],
+    "status": "approved",
+    "asset": "/assets/pins/prosecco.png",
+    "initialPosition": { "x": 0.67, "y": 0.67, "z": 0.48 },
+    "rotation": { "x": 0, "y": 0, "z": 12 },
+    "size": 0.2
+  },
+  {
+    "id": "dumbbell",
+    "name": "Dumbbell",
+    "categories": ["Sport", "Body"],
+    "status": "approved",
+    "asset": "/assets/pins/dumbbell.png",
+    "initialPosition": { "x": 0.68, "y": 0.24, "z": 0.38 },
+    "rotation": { "x": 0, "y": 0, "z": 8 },
+    "size": 0.18
+  }
+]
